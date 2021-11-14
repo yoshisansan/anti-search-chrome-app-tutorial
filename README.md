@@ -19,6 +19,9 @@ Chrome Dev 公式ページ：https://developer.chrome.com/docs/extensions/mv3/co
   
 ### チュートリアル3
 popupの簡易フォームを作成するまでのコード実装。
+  
+### チュートリアル4
+CRUDの実装
 ## 作り終わった人へ
 例：
 popup側の見た目をリッチにする
