@@ -7,6 +7,13 @@
 ### 任意のページへ何かスクリプトを挿入したい
 Chrome Dev 公式ページ：https://developer.chrome.com/docs/extensions/mv3/content_scripts/
   
+  
+## チュートリアル解説
+進捗に応じてブランチを切ってあります。わからなくなった人はブランチをpullして調整してみてください。
+  
+### チュートリアル１ branch/tutorial-1
+ここでは検索結果からDOMを削除するまでを解説。
+  
 ## 作り終わった人へ
 例：
 お気に入りのサイトに色をつけてみる
@@ -14,6 +21,4 @@ Chrome Dev 公式ページ：https://developer.chrome.com/docs/extensions/mv3/co
 検索結果のところにワンクリックで登録できるボタンを設置する
   
   
-などなど、オリジナルの機能を実装してみようっっっ！！！！
-# anti-search-chrome-app-tutorial
-# anti-search-chrome-app-tutorial
+などなど、オリジナルの機能を追加してみようっっっ！！！！
