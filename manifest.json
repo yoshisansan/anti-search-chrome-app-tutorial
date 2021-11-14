@@ -14,7 +14,7 @@
   },
   "permissions": ["storage", "activeTab", "scripting"],
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "src/index.html",
     "default_icon": {
       "32": "/assets/earth-32px.png",
       "48": "/assets/earth-48px.png"
