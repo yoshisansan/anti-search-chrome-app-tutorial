@@ -1,0 +1,34 @@
+body {
+  width: 320px;
+  height: 320px;
+}
+
+.main {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.forms {
+  text-align: center;
+}
+
+input {
+  width: 180px;
+  height: 28px;
+} 
+
+.domains__lists {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.domains__list {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}

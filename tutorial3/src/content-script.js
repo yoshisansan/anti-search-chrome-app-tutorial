@@ -7,7 +7,7 @@
 
 // tutorial2
 // 任意のURLを検索結果に表示しないようにする
-const TARGET_DOMAINS = ['techacademy.jp','sejuku.net','tech-camp.in'];
+const TARGET_DOMAINS = ['techacademy.jp','sejuku.net'];
 const googleTargetDOM = Array.from(document.querySelectorAll("#rso > div"));
 
 const removeTargetDom = (targetDeleteDomains, targetDOM) => {
