@@ -17,12 +17,12 @@ Chrome Dev 公式ページ：https://developer.chrome.com/docs/extensions/mv3/co
   
 <details>
 <summary>ヒント</summary>
-- manifest.jsonのcontent_scriptsのプロパティmatchに設定されたURLでコードが実行されます。
-- chrome.action.onClicked.addListener を使うとURLがmatchしたタイミングを検知できます。
-- ↑はブラウザサイドの検知になるためbackground.jsに関わります。
-- chrome.scripting.executeScriptで任意のファイルを実行できます。
-- content-script.jsは表示されたURLのDOMツリーに対してコードを実行できます。
-- 任意のDOMを取得したい人はブラウザのDevツールで表示したHTMLに対して「JSパスをコピー」で単一DOMを取得できるコードをコピーできます。
+- manifest.jsonのcontent_scriptsのプロパティmatchに設定されたURLでコードが実行されます。  
+- chrome.action.onClicked.addListener を使うとURLがmatchしたタイミングを検知できます。  
+- ↑はブラウザサイドの検知になるためbackground.jsに関わります。  
+- chrome.scripting.executeScriptで任意のファイルを実行できます。  
+- content-script.jsは表示されたURLのDOMツリーに対してコードを実行できます。  
+- 任意のDOMを取得したい人はブラウザのDevツールで表示したHTMLに対して「JSパスをコピー」で単一DOMを取得できるコードをコピーできます。  
 </details>  
   
 ### チュートリアル2
