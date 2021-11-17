@@ -19,18 +19,19 @@ Chrome Dev 公式ページ：https://developer.chrome.com/docs/extensions/mv3/co
 
 <details>
 <summary>ヒント</summary>
-- DOMの取得は document.getElementById や document.querySelectorAll を使うことで取得できます。</br>  
-- manifest.jsonのcontent_scriptsのプロパティmatchに設定されたURLでコードが実行されます。</br>  
-- chrome.action.onClicked.addListener を使うとURLがmatchしたタイミングを検知できます。</br>  
-- ↑はブラウザサイドの検知になるためbackground.jsに関わります。</br>  
-- chrome.scripting.executeScriptで任意のファイルを実行できます。</br>  
-- content-script.jsは表示されたURLのDOMツリーに対してコードを実行できます。</br>  
-- 任意のDOMを取得したい人はブラウザのDevツールで表示したHTMLに対して「JSパスをコピー」で単一DOMを取得できるコードをコピーできます。</br>  
+- DOMの取得は document.getElementById や document.querySelectorAll を使うことで取得できます。</br></br>  
+- manifest.jsonのcontent_scriptsのプロパティmatchに設定されたURLでコードが実行されます。</br></br>  
+- chrome.action.onClicked.addListener を使うとURLがmatchしたタイミングを検知できます。</br></br>  
+- ↑はブラウザサイドの検知になるためbackground.jsに関わります。</br></br>  
+- chrome.scripting.executeScriptで任意のファイルを実行できます。</br></br>  
+- content-script.jsは表示されたURLのDOMツリーに対してコードを実行できます。</br></br>  
+- 任意のDOMを取得したい人はブラウザのDevツールで表示したHTMLに対して「JSパスをコピー」で単一DOMを取得できるコードをコピーできます。</br></br>  
 </details>  
   
 ### チュートリアル2
 ダミー配列データを使って対象の検索結果を取り除くスクリプトを実装するまでのコード実装。
   
+<details>
 <summary>ヒント</summary>
 - 配列例：const TARGET_DOMAINS = ['techacademy.jp','sejuku.net','tech-camp.in']</br>  
 - 消したいDOMの取得はマストです。</br>  
