@@ -1,22 +1,25 @@
-# アンチ検索Chrome拡張機能
-苦手なサイトを登録して検索結果から消し去るChrome拡張機能です。  
-Chrome拡張に関する勉強会用に作ってみました。
-  
-  
+# アンチ検索 Chrome 拡張機能
+
+苦手なサイトを登録して検索結果から消し去る Chrome 拡張機能です。  
+Chrome 拡張に関する勉強会用に作ってみました。
+
 ## TIPS
-  
+
 ### 任意のページへ何かスクリプトを挿入したい
+
 Chrome Dev 公式ページ：https://developer.chrome.com/docs/extensions/mv3/content_scripts/
-  
-  
+
 ## チュートリアル解説
+
 各チュートリアルは回答（の一例）になっています。進捗別にわかれています。チュートリアル５で完成です。
-  
+
 ### チュートリアル１
-チュートリアル０のフォルダをスタート地点にどのような形で良いのでまずは検索結果からDOMを削除するまでのコード実装してみてください。
-  
+
+チュートリアル０のフォルダをスタート地点にどのような形で良いのでまずは検索結果から DOM を削除するまでのコード実装してみてください。
+
 <details>
 <summary>ヒント</summary>
+- DOMの取得は document.getElementById や document.querySelectorAll を使うことで取得できます。</br>  
 - manifest.jsonのcontent_scriptsのプロパティmatchに設定されたURLでコードが実行されます。</br>  
 - chrome.action.onClicked.addListener を使うとURLがmatchしたタイミングを検知できます。</br>  
 - ↑はブラウザサイドの検知になるためbackground.jsに関わります。</br>  
@@ -28,6 +31,14 @@ Chrome Dev 公式ページ：https://developer.chrome.com/docs/extensions/mv3/co
 ### チュートリアル2
 ダミー配列データを使って対象の検索結果を取り除くスクリプトを実装するまでのコード実装。
   
+<summary>ヒント</summary>
+- 配列例：const TARGET_DOMAINS = ['techacademy.jp','sejuku.net','tech-camp.in']</br>  
+- 消したいDOMの取得はマストです。</br>  
+- ↑はブラウザサイドの検知になるためbackground.jsに関わります。</br>  
+- chrome.scripting.executeScriptで任意のファイルを実行できます。</br>  
+- content-script.jsは表示されたURLのDOMツリーに対してコードを実行できます。</br>  
+- 任意のDOMを取得したい人はブラウザのDevツールで表示したHTMLに対して「JSパスをコピー」で単一DOMを取得できるコードをコピーできます。</br>  
+</details>  
 ### チュートリアル3
 popupの簡易フォームを作成するまでのコード実装。
   
@@ -48,4 +59,4 @@ popup側の見た目をリッチにする
 Youtube版を作ってみる  
   
   
-などなど、オリジナルの機能を追加してみようっっっ！！！！  
+などなど、オリジナルの機能を追加してみようっっっ！！！！

@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "env": {
+    "es2020": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "prettier", "plugin:prettier/recommended"],
+  "rules": {
+    // override default options
+    "no-cond-assign": ["error", "always"],
+
+    // disable now, but enable in the future
+    "one-var": "off", // ["error", "never"]
+
+    // disable
+    "init-declarations": "off",
+    "no-console": "off",
+    "no-inline-comments": "off",
+    "no-useless-escape": "off"
+  },
+  "globals": {
+    "document": true,
+    "chrome": true
+  }
+}

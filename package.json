@@ -1,0 +1,18 @@
+{
+  "name": "anti-search-application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "akifumi",
+  "license": "MIT",
+  "scripts": {
+    "prettier": "prettier --write **/**/*.{js,html,json}",
+    "eslint": "eslint product/**/*.js tutorial0/**/*.js tutorial1/**/*.js tutorial2/**/*.js tutorial3/**/*.js tutorial4/**/*.js tutorial5/**/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
+  },
+  "dependencies": {}
+}

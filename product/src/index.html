@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <title>Hello World</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-  <div class="main">
-    <h1>アンチ検索アプリ</h1>
-    <form class="forms" name="addDomainForm">
-      <input type="text" id="InputStr" value="" placeholder="URLを入力してください"/>
-      <button id="AddDomain" type="submit">追加</button>
-    </form>
-    <div class="domains">
-      <h2>追加されたドメイン</h2>
-      <ul id="DomainLists" class="domains__lists">
-        <li class="domains__list">tech-camp.in <button id="DeleteDomain1">消す</button></li>
-        <li class="domains__list">tech-camp.in <button id="DeleteDomain2">消す</button></li>
-        <li class="domains__list">tech-camp.in <button id="DeleteDomain3">消す</button></li>
-      </ul>
+  <head>
+    <title>Hello World</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>アンチ検索アプリ</h1>
+      <form class="forms" name="addDomainForm">
+        <input
+          type="text"
+          id="InputStr"
+          value=""
+          placeholder="URLを入力してください"
+        />
+        <button id="AddDomain" type="submit">追加</button>
+      </form>
+      <div class="domains">
+        <h2>追加されたドメイン</h2>
+        <ul id="DomainLists" class="domains__lists">
+          <li class="domains__list">
+            tech-camp.in <button id="DeleteDomain1">消す</button>
+          </li>
+          <li class="domains__list">
+            tech-camp.in <button id="DeleteDomain2">消す</button>
+          </li>
+          <li class="domains__list">
+            tech-camp.in <button id="DeleteDomain3">消す</button>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <script src="./popup.js" ></script>
-</body>
+    <script src="./popup.js"></script>
+  </body>
 </html>
