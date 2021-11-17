@@ -1,7 +1,6 @@
 'use strict';
-const addDomainForm = document.forms.addDomainForm;
+
 const addDomainBtn = document.getElementById('AddDomain');
-const removeDomainBtn = document.getElementById('DeleteDomain');
 const domainLists = document.getElementById('DomainLists');
 
 // Create処理 //
@@ -45,12 +44,8 @@ const readSaveData = () => {
 //省略
 
 // Delete処理 //
-const deleteSaveData = async (e) => {
-  await chrome.storage.sync.remove(e.key);
-  readSaveData();
-};
 
-// domainListsの中身のliリストに変更があったら発火する処理
+// domainListsの中身のliリストに変更があったら発火する処理。chrome.storage.sync.get使用時にliのDOMが変わるので都度addEventListenerをセットし直している
 const observer = new MutationObserver(async (records) => {
   const domainLists = Array.from(records[0].addedNodes);
   domainLists.forEach(async (li) => {

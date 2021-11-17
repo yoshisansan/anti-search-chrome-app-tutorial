@@ -1,6 +1,6 @@
 'use strict';
+
 const addDomainBtn = document.getElementById('AddDomain');
-const removeDomainBtn = document.getElementById('DeleteDomain');
 const domainLists = document.getElementById('DomainLists');
 
 // Create処理 //
@@ -11,11 +11,12 @@ const getSaveData = () =>
 
 addDomainBtn.addEventListener('click', async (e) => {
   e.preventDefault();
-  const inputElm = document.getElementById('InputStr');
-  const domainRegex = /(?:https?:\/\/www.|https?:\/\/)([^\/]+)/;
-  const domain = inputElm.value.match(domainRegex)[1];
-  if (domain === null) return;
+  const inputElm = document.getElementById('InputStr'),
+    domainRegex = /(?:https?:\/\/www.|https?:\/\/)([^\/]+)/,
+    hasDomainURL = inputElm.value.match(domainRegex);
+  if (hasDomainURL === null) return;
 
+  const domain = hasDomainURL[1];
   const saveDataObj = await getSaveData().then((res) => res);
   const length = Object.keys(saveDataObj).length;
   chrome.storage.sync.set({ [`key${length + 1}`]: domain }, () => {
@@ -27,7 +28,6 @@ addDomainBtn.addEventListener('click', async (e) => {
 // Read処理 //
 const readSaveData = () => {
   chrome.storage.sync.get(null, (res) => {
-    console.log(res);
     const domainDOMs = Object.values(res)
       .map(
         (domain, i) =>
@@ -44,22 +44,18 @@ const readSaveData = () => {
 //省略
 
 // Delete処理 //
-const deleteSaveData = async (e) => {
-  await chrome.storage.sync.remove(e.key);
-  readSaveData();
-};
 
-// domainListsの中身のliリストに変更があったら発火する処理
+// domainListsの中身のliリストに変更があったら発火する処理。chrome.storage.sync.get使用時にliのDOMが変わるので都度addEventListenerをセットし直している
 const observer = new MutationObserver(async (records) => {
   const domainLists = Array.from(records[0].addedNodes);
   domainLists.forEach(async (li) => {
     li.querySelector('.domains__list-btn').addEventListener(
       'click',
       async (e) => {
-        // 消すボタンを押すと対象エレメントを消してkey1,key2...で入れ直す処理
-        await chrome.storage.sync.remove(e.target.id);
+        // 消すボタンを押すと対象プロパティを消してkey1,key2...で入れ直す処理
+        chrome.storage.sync.remove(e.target.id);
         const saveDataObj = await getSaveData().then((res) => res);
-        await chrome.storage.sync.clear();
+        chrome.storage.sync.clear();
         Object.values(saveDataObj).map((domain, i) =>
           chrome.storage.sync.set({ [`key${i + 1}`]: domain }),
         );

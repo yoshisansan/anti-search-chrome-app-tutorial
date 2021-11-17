@@ -6,7 +6,7 @@ const getSaveData = () =>
   new Promise((resolve) => {
     chrome.storage.sync.get(null, resolve);
   });
-// const TARGET_DOMAINS = ['techacademy.jp','sejuku.net'];
+
 const googleTargetDOM = Array.from(document.querySelectorAll('#rso > div'));
 
 const removeTargetDom = (targetDeleteDomains, targetDOM) => {
