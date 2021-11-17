@@ -1,6 +1,5 @@
 'use strict';
 const addDomainBtn = document.getElementById('AddDomain');
-const removeDomainBtn = document.getElementById('DeleteDomain');
 const domainLists = document.getElementById('DomainLists');
 
 // Create処理 //
