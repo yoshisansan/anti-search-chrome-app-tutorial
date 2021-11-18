@@ -14,22 +14,22 @@ Chrome Dev 公式ページ：https://developer.chrome.com/docs/extensions/mv3/co
 一通りこなすことで以下の基本的な JavaScript の技術をアウトプットできます。
 
 ・純粋な JavaScript の基本的な関数の使い方  
-・非同期処理
-・DOM 操作
-・正規表現
-・for 文関係
-・CRUD 処理
-
+・非同期処理  
+・DOM 操作  
+・正規表現  
+・for 文関係  
+・CRUD 処理  
+  
 ## チュートリアル解説
-
+  
 各チュートリアルは回答（の一例）になっています。チュートリアル１をこなしたい人はチュートリアル０のフォルダを使って回答を進めます。
-
+  
 チュートリアル５で完成です。
-
+  
 ### チュートリアル１
-
+  
 どのようなコードでも良いのでまずは Google の検索結果から DOM を削除するまでのコード実装してみてください。
-
+  
 <details>
 <summary>ヒント</summary>
 </br>
@@ -55,10 +55,10 @@ Chrome Dev 公式ページ：https://developer.chrome.com/docs/extensions/mv3/co
 </details>
 
 ### チュートリアル 3
-
+  
 popup の簡易フォームを作成するまでのコード実装。
 （CSS スタイリングはお好みです。JS 学習メインで触っていて HTML/CSS 側を扱いたくない人はチュートリアル３の内容をコピペしてもらっても構いません。）
-
+  
 <details>
 <summary>ヒント</summary>
 </br>
@@ -68,9 +68,9 @@ popup の簡易フォームを作成するまでのコード実装。
 </details>
 
 ### チュートリアル 4
-
+  
 CRUD の実装（ただし Update は実装しなくて問題ありません。完成品も実装していません。）
-
+  
 <details>
 <summary>ヒント</summary>
 </br>
