@@ -21,7 +21,7 @@ Chrome Dev 公式ページ：https://developer.chrome.com/docs/extensions/mv3/co
 ・非同期処理  
 ・DOM 操作  
 ・正規表現  
-・for 文関係  
+・if,for文
 ・CRUD 処理  
   
 ## チュートリアル解説

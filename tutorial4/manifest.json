@@ -1,11 +1,14 @@
 {
   "name": "Anti Search App",
-  "description" : "苦手なサイトを検索結果からカスタマイズで消し去るアプリ",
+  "description": "苦手なサイトを検索結果からカスタマイズで消し去るアプリ",
   "version": "1.0.1",
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["https://www.google.com/search?*","https://www.google.co.jp/search?*"],
+      "matches": [
+        "https://www.google.com/search?*",
+        "https://www.google.co.jp/search?*"
+      ],
       "js": ["/src/content-script.js"]
     }
   ],
@@ -16,12 +19,12 @@
   "action": {
     "default_popup": "src/index.html",
     "default_icon": {
-      "32": "/assets/earth-32px.png",
-      "48": "/assets/earth-48px.png"
+      "32": "/assets/eyecon-32px.png",
+      "48": "/assets/eyecon-48px.png"
     }
   },
   "icons": {
-    "32": "/assets/earth-32px.png",
-    "48": "assets/earth-48px.png"
+    "32": "/assets/eyecon-32px.png",
+    "48": "/assets/eyecon-48px.png"
   }
 }
