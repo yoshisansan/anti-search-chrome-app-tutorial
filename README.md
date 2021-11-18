@@ -2,7 +2,10 @@
 
 苦手なサイトを登録して検索結果から消し去る Chrome 拡張機能です。  
 Chrome 拡張に関する勉強会用に作ってみました。
-
+  
+  
+  ![AntiSearchApp](https://giphy.com/embed/BHuu3DZK001ttPQ1At)
+  
 ## TIPS
 
 ### 任意のページへ何かスクリプトを挿入したい
