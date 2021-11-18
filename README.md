@@ -4,7 +4,8 @@
 Chrome 拡張に関する勉強会用に作ってみました。
   
   
-  ![AntiSearchApp](https://giphy.com/embed/BHuu3DZK001ttPQ1At)
+  ![AntiSearchApp]](https://media.giphy.com/media/BHuu3DZK001ttPQ1At/giphy.gif)
+
   
 ## TIPS
 
