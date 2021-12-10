@@ -44,6 +44,7 @@ const readSaveData = () => {
 //省略
 
 // Delete処理 //
+//以下は時間が余ったら実装します
 
 // domainListsの中身のliリストに変更があったら発火する処理。chrome.storage.sync.get使用時にliのDOMが変わるので都度addEventListenerをセットし直している
 const observer = new MutationObserver(async (records) => {
